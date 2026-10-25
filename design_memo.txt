@@ -1,0 +1,17 @@
+1. Why is a tree appropriate for the doctor structure?
+
+A tree works well for the doctor structure because hierarchy is modeled by the data structure. It is possible to have supervising and subordinate doctors using the tree structure. A different data structure, such as a Python list, would allow doctors to be stored in a specific order, but there would be no way to discern the hierarchy with the list alone. Additionally, using a tree allows different traversal methods to be used on the data, depending on the specific reporting task being done. 
+
+
+2. When might a software engineer use preorder, inorder, or postorder traversals?
+
+A software engineer might use a preorder traversal when they need to copy a tree and process the parent nodes before child nodes, such as when the parent nodes contain data that affect child nodes.
+
+Inorder traversal might be used to produce sorted output. For example, a tree used to store patient IDs  could use inorder traversal to produce a list of the patient IDs from smallest to largest. 
+
+Postorder might be used when reverse order traversal is needed. For example, in an application with a file structure, a postorder traversal could be used to delete files and folders. The files inside folders are deleted first, then the folders that contained them. 
+
+
+3. How do heaps help simulate real-time systems like emergency intake?
+
+Like an emergency intake system, heaps allow developers to quickly access the most important nodes, and reorganize the tree each time nodes are added. Being able to reorganize the tree when nodes are inserted is crucial for an application like an emergency intake system, since the most urgent patients should move to the front of the queue. 
